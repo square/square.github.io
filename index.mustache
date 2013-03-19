@@ -72,12 +72,15 @@
               <ol class="menu-category-list has-images">
               {{#repos_with_images}}
               <li class="menu-item">
-                <div class="menu-item-info has-no-meta-content">
+                <div class="menu-item-info{{^description}} has-no-meta-content{{/description}}">
                   <h4 class="menu-item-name">{{name}}</h4>
                   <span class="menu-item-price">{{#website}}<a href="{{website}}" target="_blank">Website</a> &middot; {{/website}}<a href="{{href}}" target="_blank">GitHub</a></span>
                   <span class="menu-item-price-range">{{#website}}<a href="{{website}}" target="_blank">Website</a> &middot; {{/website}}<a href="{{href}}" target="_blank">GitHub</a></span>
+                  {{#description}}
+                  <p class="menu-item-description">{{description}}</p>
+                  {{/description}}
                 </div>
-                <div class="menu-item-image">
+                <div class="menu-item-image{{#description}} has-meta-content{{/description}}">
                   <img src="/repo_images/{{name}}.jpg" onerror="missingImgError(this)">
                 </div>
               </li>
@@ -88,9 +91,12 @@
               <ol class="menu-category-list">
               {{#repos_without_images}}
               <li class="menu-item">
-                <div class="menu-item-info has-no-meta-content">
+                <div class="menu-item-info{{^description}} has-no-meta-content{{/description}}">
                   <h4 class="menu-item-name">{{name}}</h4>
                   <span class="menu-item-price">{{#website}}<a href="{{website}}" target="_blank">Website</a> &middot; {{/website}}<a href="{{href}}" target="_blank">GitHub</a></span>
+                  {{#description}}
+                  <p class="menu-item-description">{{description}}</p>
+                  {{/description}}
                 </div>
               </li>
               {{/repos_without_images}}
