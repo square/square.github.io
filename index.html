@@ -4,39 +4,19 @@
     <meta charset="utf-8">
     <title>Square Open Source</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-    <style type="text/css">body { display: none; }</style>
-    <link href="/assets/v3-c48a8ceffc3e2458db2bb73f0eb9fd6e.css" media="screen" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" href="/assets/public/favicon-ffd72bc135952438a86a9d309e6efa06.ico" />
-    <script src="/assets/modernizr-873489b05ec0ff34729963a585b0e94a.js" type="text/javascript"></script>
-    <style type="text/css">
-      .icon-gplus {
-        background: url('/gplus.png') no-repeat;
-        height: 40px;
-        width: 40px;
-        display: inline-block;
-        vertical-align: middle;
-      }
-      .menu-item-price a, .menu-item-price-range a {
-        color: #72b16e;
-      }
-      a.btn-view-full-menu {
-        top: -2.25em;
-      }
-    </style>
+
+    <link href="/assets/base.css" media="screen" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="/assets/public/favicon.ico" />
+    
+    <script src="/assets/modernizr.js" type="text/javascript"></script>
   </head>
-  <body class="should-show-header">
-    <header class="header">
-      <a href="https://squareup.com" class="logo">
-        <h1>Square, Inc</h1>
-      </a>
-    </header>
+  <body>
     <div class="wrapper">
       <div class="profile">
-
         <section class="profile-masthead" id="masthead">
           <header class="profile-logo">
             <div class="profile-logo-image">
-              <img alt="Square Open Source" onerror="missingLogoImg(this)" src="/logo.png" />
+              <img alt="Square Open Source" src="/images/logo.png" />
             </div>
             <div class="profile-name">
               <h1>Square Open Source</h1>
@@ -44,7 +24,7 @@
           </header>
           <aside class="profile-summary">
             <div class="summary-location summary-module">
-              <a href="http://github.com/square/">github.com/square/</a>
+              <a href="http://github.com/square">github.com/square</a>
             </div>
           </aside>
         </section>
@@ -53,7 +33,7 @@
           <!-- TODO header? -->
 
           <div class="profile-description">
-            <p>As a company built on open source, here are some of our internally-developed libraries we have contributed back to the community.</p>
+            <p>As a company built on open source, here are some of the internally-developed libraries we have contributed back to the community.</p>
           </div>
 
           <article class="profile-menu" id="menu">
@@ -75,66 +55,60 @@
                 <div class="menu-item-info">
                   <h4 class="menu-item-name">android-times-square</h4>
                   <span class="menu-item-price"><a href="https://github.com/square/android-times-square" target="_blank">GitHub</a></span>
-                  <span class="menu-item-price-range"><a href="https://github.com/square/android-times-square" target="_blank">GitHub</a></span>
                   <p class="menu-item-description">Standalone Android widget for picking a single date from a calendar view.</p>
                 </div>
                 <div class="menu-item-image has-meta-content">
-                  <img src="/repo_images/android-times-square.jpg" onerror="missingImgError(this)">
+                  <img src="/repo_images/android-times-square.jpg" />
                 </div>
               </li>
               <li class="menu-item">
                 <div class="menu-item-info">
                   <h4 class="menu-item-name">dagger</h4>
                   <span class="menu-item-price"><a href="http://square.github.com/dagger/" target="_blank">Website</a> &middot; <a href="https://github.com/square/dagger" target="_blank">GitHub</a></span>
-                  <span class="menu-item-price-range"><a href="http://square.github.com/dagger/" target="_blank">Website</a> &middot; <a href="https://github.com/square/dagger" target="_blank">GitHub</a></span>
                   <p class="menu-item-description">A fast dependency injector for Android and Java.</p>
                 </div>
                 <div class="menu-item-image has-meta-content">
-                  <img src="/repo_images/dagger.jpg" onerror="missingImgError(this)">
+                  <img src="/repo_images/dagger.jpg" />
                 </div>
               </li>
               <li class="menu-item">
                 <div class="menu-item-info">
                   <h4 class="menu-item-name">fest-android</h4>
                   <span class="menu-item-price"><a href="http://square.github.com/fest-android/" target="_blank">Website</a> &middot; <a href="https://github.com/square/fest-android" target="_blank">GitHub</a></span>
-                  <span class="menu-item-price-range"><a href="http://square.github.com/fest-android/" target="_blank">Website</a> &middot; <a href="https://github.com/square/fest-android" target="_blank">GitHub</a></span>
                   <p class="menu-item-description">A set of FEST assertion helpers geared toward testing Android.</p>
                 </div>
                 <div class="menu-item-image has-meta-content">
-                  <img src="/repo_images/fest-android.jpg" onerror="missingImgError(this)">
+                  <img src="/repo_images/fest-android.jpg" />
                 </div>
               </li>
               <li class="menu-item">
                 <div class="menu-item-info">
                   <h4 class="menu-item-name">otto</h4>
                   <span class="menu-item-price"><a href="http://square.github.com/otto/" target="_blank">Website</a> &middot; <a href="https://github.com/square/otto" target="_blank">GitHub</a></span>
-                  <span class="menu-item-price-range"><a href="http://square.github.com/otto/" target="_blank">Website</a> &middot; <a href="https://github.com/square/otto" target="_blank">GitHub</a></span>
                   <p class="menu-item-description">An enhanced Guava-based event bus with emphasis on Android support.</p>
                 </div>
                 <div class="menu-item-image has-meta-content">
-                  <img src="/repo_images/otto.jpg" onerror="missingImgError(this)">
+                  <img src="/repo_images/otto.jpg" />
                 </div>
               </li>
               <li class="menu-item">
                 <div class="menu-item-info">
                   <h4 class="menu-item-name">pollexor</h4>
                   <span class="menu-item-price"><a href="http://square.github.com/pollexor/" target="_blank">Website</a> &middot; <a href="https://github.com/square/pollexor" target="_blank">GitHub</a></span>
-                  <span class="menu-item-price-range"><a href="http://square.github.com/pollexor/" target="_blank">Website</a> &middot; <a href="https://github.com/square/pollexor" target="_blank">GitHub</a></span>
                   <p class="menu-item-description">Java client for the Thumbor image service which allows you to build URIs in an expressive fashion using a fluent API.</p>
                 </div>
                 <div class="menu-item-image has-meta-content">
-                  <img src="/repo_images/pollexor.jpg" onerror="missingImgError(this)">
+                  <img src="/repo_images/pollexor.jpg" />
                 </div>
               </li>
               <li class="menu-item">
                 <div class="menu-item-info">
                   <h4 class="menu-item-name">spoon</h4>
                   <span class="menu-item-price"><a href="http://square.github.com/spoon/" target="_blank">Website</a> &middot; <a href="https://github.com/square/spoon" target="_blank">GitHub</a></span>
-                  <span class="menu-item-price-range"><a href="http://square.github.com/spoon/" target="_blank">Website</a> &middot; <a href="https://github.com/square/spoon" target="_blank">GitHub</a></span>
                   <p class="menu-item-description">Distributing instrumentation tests to all your Androids.</p>
                 </div>
                 <div class="menu-item-image has-meta-content">
-                  <img src="/repo_images/spoon.jpg" onerror="missingImgError(this)">
+                  <img src="/repo_images/spoon.jpg" />
                 </div>
               </li>
               </ol>
@@ -143,7 +117,7 @@
                 <div class="menu-item-info">
                   <h4 class="menu-item-name">okhttp</h4>
                   <span class="menu-item-price"><a href="https://github.com/square/okhttp" target="_blank">GitHub</a></span>
-                  <p class="menu-item-description">An HTTP+SPDY client for Android and Java applications</p>
+                  <p class="menu-item-description">An HTTP+SPDY client for Android and Java applications.</p>
                 </div>
               </li>
               <li class="menu-item">
@@ -176,22 +150,20 @@
                 <div class="menu-item-info">
                   <h4 class="menu-item-name">objc-TimesSquare</h4>
                   <span class="menu-item-price"><a href="https://github.com/square/objc-TimesSquare" target="_blank">GitHub</a></span>
-                  <span class="menu-item-price-range"><a href="https://github.com/square/objc-TimesSquare" target="_blank">GitHub</a></span>
                   <p class="menu-item-description">TimesSquare is an Objective-C calendar view for your apps.</p>
                 </div>
                 <div class="menu-item-image has-meta-content">
-                  <img src="/repo_images/objc-TimesSquare.jpg" onerror="missingImgError(this)">
+                  <img src="/repo_images/objc-TimesSquare.jpg" />
                 </div>
               </li>
               <li class="menu-item">
                 <div class="menu-item-info">
                   <h4 class="menu-item-name">PonyDebugger</h4>
                   <span class="menu-item-price"><a href="https://github.com/square/PonyDebugger" target="_blank">GitHub</a></span>
-                  <span class="menu-item-price-range"><a href="https://github.com/square/PonyDebugger" target="_blank">GitHub</a></span>
                   <p class="menu-item-description">Remote network and data debugging for your native iOS app using Chrome Developer Tools</p>
                 </div>
                 <div class="menu-item-image has-meta-content">
-                  <img src="/repo_images/PonyDebugger.jpg" onerror="missingImgError(this)">
+                  <img src="/repo_images/PonyDebugger.jpg" />
                 </div>
               </li>
               </ol>
@@ -226,22 +198,20 @@
                 <div class="menu-item-info">
                   <h4 class="menu-item-name">dagger</h4>
                   <span class="menu-item-price"><a href="http://square.github.com/dagger/" target="_blank">Website</a> &middot; <a href="https://github.com/square/dagger" target="_blank">GitHub</a></span>
-                  <span class="menu-item-price-range"><a href="http://square.github.com/dagger/" target="_blank">Website</a> &middot; <a href="https://github.com/square/dagger" target="_blank">GitHub</a></span>
                   <p class="menu-item-description">A fast dependency injector for Android and Java.</p>
                 </div>
                 <div class="menu-item-image has-meta-content">
-                  <img src="/repo_images/dagger.jpg" onerror="missingImgError(this)">
+                  <img src="/repo_images/dagger.jpg" />
                 </div>
               </li>
               <li class="menu-item">
                 <div class="menu-item-info">
                   <h4 class="menu-item-name">pollexor</h4>
                   <span class="menu-item-price"><a href="http://square.github.com/pollexor/" target="_blank">Website</a> &middot; <a href="https://github.com/square/pollexor" target="_blank">GitHub</a></span>
-                  <span class="menu-item-price-range"><a href="http://square.github.com/pollexor/" target="_blank">Website</a> &middot; <a href="https://github.com/square/pollexor" target="_blank">GitHub</a></span>
                   <p class="menu-item-description">Java client for the Thumbor image service which allows you to build URIs in an expressive fashion using a fluent API.</p>
                 </div>
                 <div class="menu-item-image has-meta-content">
-                  <img src="/repo_images/pollexor.jpg" onerror="missingImgError(this)">
+                  <img src="/repo_images/pollexor.jpg" />
                 </div>
               </li>
               </ol>
@@ -283,44 +253,40 @@
                 <div class="menu-item-info">
                   <h4 class="menu-item-name">crossfilter</h4>
                   <span class="menu-item-price"><a href="http://square.github.com/crossfilter/" target="_blank">Website</a> &middot; <a href="https://github.com/square/crossfilter" target="_blank">GitHub</a></span>
-                  <span class="menu-item-price-range"><a href="http://square.github.com/crossfilter/" target="_blank">Website</a> &middot; <a href="https://github.com/square/crossfilter" target="_blank">GitHub</a></span>
                   <p class="menu-item-description">Fast n-dimensional filtering and grouping of records.</p>
                 </div>
                 <div class="menu-item-image has-meta-content">
-                  <img src="/repo_images/crossfilter.jpg" onerror="missingImgError(this)">
+                  <img src="/repo_images/crossfilter.jpg" />
                 </div>
               </li>
               <li class="menu-item">
                 <div class="menu-item-info">
                   <h4 class="menu-item-name">cube</h4>
                   <span class="menu-item-price"><a href="http://square.github.com/cube" target="_blank">Website</a> &middot; <a href="https://github.com/square/cube" target="_blank">GitHub</a></span>
-                  <span class="menu-item-price-range"><a href="http://square.github.com/cube" target="_blank">Website</a> &middot; <a href="https://github.com/square/cube" target="_blank">GitHub</a></span>
                   <p class="menu-item-description">Cube: A system for time series visualization.</p>
                 </div>
                 <div class="menu-item-image has-meta-content">
-                  <img src="/repo_images/cube.jpg" onerror="missingImgError(this)">
+                  <img src="/repo_images/cube.jpg" />
                 </div>
               </li>
               <li class="menu-item">
                 <div class="menu-item-info">
                   <h4 class="menu-item-name">cubism</h4>
                   <span class="menu-item-price"><a href="http://square.github.com/cubism/" target="_blank">Website</a> &middot; <a href="https://github.com/square/cubism" target="_blank">GitHub</a></span>
-                  <span class="menu-item-price-range"><a href="http://square.github.com/cubism/" target="_blank">Website</a> &middot; <a href="https://github.com/square/cubism" target="_blank">GitHub</a></span>
                   <p class="menu-item-description">Cubism.js: A JavaScript library for time series visualization.</p>
                 </div>
                 <div class="menu-item-image has-meta-content">
-                  <img src="/repo_images/cubism.jpg" onerror="missingImgError(this)">
+                  <img src="/repo_images/cubism.jpg" />
                 </div>
               </li>
               <li class="menu-item">
                 <div class="menu-item-info">
                   <h4 class="menu-item-name">es6-module-transpiler</h4>
                   <span class="menu-item-price"><a href="http://square.github.com/es6-module-transpiler" target="_blank">Website</a> &middot; <a href="https://github.com/square/es6-module-transpiler" target="_blank">GitHub</a></span>
-                  <span class="menu-item-price-range"><a href="http://square.github.com/es6-module-transpiler" target="_blank">Website</a> &middot; <a href="https://github.com/square/es6-module-transpiler" target="_blank">GitHub</a></span>
                   <p class="menu-item-description">Tomorrow’s JavaScript module syntax today</p>
                 </div>
                 <div class="menu-item-image has-meta-content">
-                  <img src="/repo_images/es6-module-transpiler.jpg" onerror="missingImgError(this)">
+                  <img src="/repo_images/es6-module-transpiler.jpg" />
                 </div>
               </li>
               </ol>
@@ -372,11 +338,10 @@
                 <div class="menu-item-info">
                   <h4 class="menu-item-name">squash</h4>
                   <span class="menu-item-price"><a href="http://squash.io" target="_blank">Website</a> &middot; <a href="https://github.com/SquareSquash" target="_blank">GitHub</a></span>
-                  <span class="menu-item-price-range"><a href="http://squash.io" target="_blank">Website</a> &middot; <a href="https://github.com/SquareSquash" target="_blank">GitHub</a></span>
                   <p class="menu-item-description">Squash is an exception reporting and bug analysis tool from Square.</p>
                 </div>
                 <div class="menu-item-image has-meta-content">
-                  <img src="/repo_images/squash.jpg" onerror="missingImgError(this)">
+                  <img src="/repo_images/squash.jpg" />
                 </div>
               </li>
               </ol>
@@ -394,7 +359,7 @@
             <a id="btn-view-full-menu" class="btn-view-full-menu" href="http://github.com/square">View full list of repositories</a>
           </article>
 
-          <section class="profile-map" id="modules">
+          <section class="profile-modules" id="modules">
             <ul class='twitter-columns'>
               <li class="profile-module module-twitter">
                 <h2 class="module-name">Tweets</h2>
@@ -422,6 +387,7 @@
       <nav class="footer-navigation">
         <i class="icon-square-footer"></i>
         <ul class="footer-navigation-list">
+          <li class="footer-navigation-item"><a href="https://squareup.com/directory">Square Directory</a></li>
           <li class="footer-navigation-item"><a href="https://squareup.com/wallet">Square Wallet</a></li>
           <li class="footer-navigation-item"><a href="https://squareup.com/register">Square Register</a></li>
           <li class="footer-navigation-item"><a href="https://squareup.com/security">Security</a></li>
