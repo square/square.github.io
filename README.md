@@ -19,3 +19,8 @@ the `index.html` page with the latest repos by using the `index.mustache` file
 as a template.
 
 Repository data is pulled via the GitHub API (e.g., website).
+
+Images are loaded by convention from the `repo_images/` directory. Ensure the
+name is the same as the repo name in the `repos.json` file and has a `.jpg`
+extension. Currently all images are rotated 10 degrees counter-clockwise to
+break up the overwhelming horizontal and vertical visual lines on the page.

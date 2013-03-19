@@ -15,7 +15,7 @@ def gh_repo(name):
   print('Fetching "%s" repo information...' % name)
   # Use the following for development so you do not hammer the GitHub API.
   #return {'name': name, 'html_url': 'http://google.com', 'homepage': 'http://example.com'}
-  r = requests.get('https://api.github.com/repos/%s' % name)
+  r = requests.get('https://api.github.com/repos/square/%s' % name)
   if r.status_code is not 200:
     raise Exception('GitHub API call for repo "%s" failed with %s.' % (name, r.status_code))
   return json.loads(r.text)
@@ -73,7 +73,7 @@ for category_name in sorted(categories.keys(), key=lambda s: s.lower() if s is n
       'href': repo_data['html_url'],
       'website': repo_data.get('homepage', None)
     }
-    if os.path.exists(os.path.join('images', '%s.jpg' % name)):
+    if os.path.exists(os.path.join('repo_images', '%s.jpg' % name)):
       data['repos_with_images'].append(repo)
       data['has_repos_with_images'] = True
     else:
