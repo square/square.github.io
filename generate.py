@@ -13,7 +13,9 @@ index_out = 'index.html'
 
 def gh_repo(name):
   print('Fetching "%s" repo information...' % name)
-  r = requests.get('https://api.github.com/repos/square/%s' % name)
+  # Use the following for development so you do not hammer the GitHub API.
+  #return {'name': name, 'html_url': 'http://google.com', 'homepage': 'http://example.com'}
+  r = requests.get('https://api.github.com/repos/%s' % name)
   if r.status_code is not 200:
     raise Exception('GitHub API call for repo "%s" failed with %s.' % (name, r.status_code))
   return json.loads(r.text)
@@ -21,44 +23,56 @@ def gh_repo(name):
 with codecs.open(index_in, 'r', 'utf-8') as f:
   template = pystache.parse(f.read())
 with codecs.open(repos_in, 'r', 'utf-8') as f:
-  repos = json.loads(f.read())
+  repo_config = json.loads(f.read())
 
-repo_data = {}
-for repo in repos.keys():
-  # Use the following for development so you do not hammer the GitHub API
-  #repo_data[repo] = {'name': repo, 'html_url': 'http://google.com', 'homepage': 'http://example.com'}
-  repo_data[repo] = gh_repo(repo)
+repos = repo_config['repos']
+custom = repo_config['custom']
 
+# Multimap of categories to their repos.
 categories = defaultdict(list)
-for repo in sorted(repos.keys(), key=lambda s: s.lower()):
+
+# Loop through declared repos, looking up their info on GitHub and adding to the specified categories.
+for repo in repos.keys():
   repo_cats = repos[repo]
+  repo_data = gh_repo(repo)
   if repo_cats is None:
     repo_cats = ['Other']
   for repo_cat in repo_cats:
-    categories[repo_cat].append(repo_data[repo])
+    categories[repo_cat].append(repo_data)
 
-# Assemble template context.
+# Loop though custom repos adding their data (faked to look like GitHub's) to the specified categories.
+for repo_data in custom:
+  repo_cats = repo_data['categories']
+  if repo_cats is None:
+    repo_cats = ['Other']
+  for repo_cat in repo_cats:
+    categories[repo_cat].append(repo_data)
+
+
+# Template context that will be used for rendering.
 context = {
   'categories': []
 }
-for category in sorted(categories.keys(), key=lambda s: s.lower() if s is not 'Other' else 'z'*10):
+
+# Loop over the category names sorted alphabetically (case-insensitive) with 'Other' last.
+for category_name in sorted(categories.keys(), key=lambda s: s.lower() if s is not 'Other' else 'z'*10):
   data = {
-    'name': category,
-    'index': category.lower(),
+    'name': category_name,
+    'index': category_name.lower(),
     'has_repos_with_images': False,
     'has_repos_without_images': False,
     'repos_with_images': [],
     'repos_without_images': [],
   }
-  for repo_data in categories[category]:
+
+  # Loop over category repos sorted alphabetically (case-insensitive).
+  for repo_data in sorted(categories[category_name], key=lambda s: s['name'].lower()):
     name = repo_data['name']
     repo = {
-      'name': name
+      'name': name,
+      'href': repo_data['html_url'],
+      'website': repo_data.get('homepage', None)
     }
-    if 'html_url' in repo_data:
-      repo['href'] = repo_data['html_url']
-    if 'homepage' in repo_data:
-      repo['website'] = repo_data['homepage']
     if os.path.exists(os.path.join('images', '%s.jpg' % name)):
       data['repos_with_images'].append(repo)
       data['has_repos_with_images'] = True
@@ -68,7 +82,7 @@ for category in sorted(categories.keys(), key=lambda s: s.lower() if s is not 'O
 
   context['categories'].append(data)
 
-# Render the page HTML.
+# Render the page HTML using MOOOUUSSTTAACCCCHHEEEEE!
 renderer = pystache.Renderer()
 html = renderer.render(template, context)
 
