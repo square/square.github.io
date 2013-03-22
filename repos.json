@@ -26,7 +26,8 @@
     "protoparser": ["Java"],
     "KIF": ["iOS"],
     "seismic": ["Android"],
-    "tape": ["Android"]
+    "tape": ["Android"],
+    "jirafy": ["Other"]
   },
   "custom": [
     {
