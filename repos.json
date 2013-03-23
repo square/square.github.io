@@ -1,6 +1,6 @@
 {
   "repos": {
-    "crossfilter": ["Javascript"],
+    "crossfilter": ["JavaScript"],
     "jetpack": ["Ruby"],
     "JavaWriter": ["Java"],
     "objc-mocktail": ["iOS"],
@@ -11,7 +11,7 @@
     "toggle": null,
     "dagger": ["Android", "Java"],
     "retrofit": ["Android", "Java"],
-    "es6-module-transpiler": ["Javascript"],
+    "es6-module-transpiler": ["JavaScript"],
     "fest-android": ["Android"],
     "otto": ["Android"],
     "border_patrol": ["Ruby"],
@@ -21,8 +21,8 @@
     "cane": ["Ruby"],
     "objc-TimesSquare": ["iOS"],
     "fdoc": ["Ruby"],
-    "cube": ["Javascript"],
-    "cubism": ["Javascript"],
+    "cube": ["JavaScript"],
+    "cubism": ["JavaScript"],
     "protoparser": ["Java"],
     "KIF": ["iOS"],
     "seismic": ["Android"],
