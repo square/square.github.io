@@ -27,7 +27,8 @@
     "KIF": ["iOS"],
     "seismic": ["Android"],
     "tape": ["Android"],
-    "jirafy": ["Other"]
+    "jirafy": ["Other"],
+    "rack-servlet": ["Java"]
   },
   "custom": [
     {
