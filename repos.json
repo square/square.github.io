@@ -19,6 +19,7 @@
     "objc-TimesSquare": ["iOS"],
     "okhttp": ["Android", "Java"],
     "otto": ["Android"],
+    "picasso": ["Android"],
     "pollexor": ["Android", "Java"],
     "PonyDebugger": ["iOS"],
     "protoparser": ["Java"],
