@@ -7,20 +7,37 @@ import os
 import pystache
 import requests
 import time
+import netrc
+from pygithub3 import Github
 
 repos_in = 'repos.json'
 index_in = 'index.mustache'
 index_out = 'index.html'
 
+auth = netrc.netrc()
+try:
+  (login, _, password) = auth.authenticators('api.github.com')
+  ghclient = Github(login=login, password=password)
+  logged_in = True
+except:
+  ghclient = Github()
+  logged_in = False
+
 def gh_repo(name):
   print('Fetching "%s" repo information...' % name)
   # Use the following for development so you do not hammer the GitHub API.
   #return {'name': name, 'html_url': 'http://google.com', 'homepage': 'http://example.com', 'description': 'Description!'}
-  r = requests.get('https://api.github.com/repos/square/%s' % name)
-  if r.status_code is not 200:
-    raise Exception('GitHub API call for repo "%s" failed with %s.' % (name, r.status_code))
-  time.sleep(2) # Take a nap so GitHub doesn't aggressively throttle us.
-  return json.loads(r.text)
+
+  if not logged_in:
+    time.sleep(2.0) # Take a nap so GitHub doesn't aggressively throttle us.
+
+  repo = ghclient.repos.get(user='square', repo=name)
+  return dict(
+    name=repo.name,
+    homepage=repo.homepage,
+    html_url=repo.html_url,
+    description=repo.description
+  )
 
 with codecs.open(index_in, 'r', 'utf-8') as f:
   template = pystache.parse(f.read())
