@@ -14,6 +14,7 @@
     "JavaWriter": ["Java"],
     "jetpack": ["Ruby"],
     "jirafy": ["Other"],
+    "LGTM": ["JavaScript"],
     "objc-mocktail": ["iOS"],
     "objc-TimesSquare": ["iOS"],
     "okhttp": ["Android", "Java"],
