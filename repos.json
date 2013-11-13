@@ -26,6 +26,7 @@
     "rack-servlet": ["Java"],
     "retrofit": ["Android", "Java"],
     "seismic": ["Android"],
+    "shuttle": ["Other"],
     "SocketRocket": ["iOS"],
     "spoon": ["Android"],
     "tape": ["Android"],
