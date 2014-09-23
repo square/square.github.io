@@ -1,6 +1,7 @@
 {
   "repos": {
     "android-times-square": ["Android"],
+    "assertj-android": ["Android"],
     "border_patrol": ["Ruby"],
     "cane": ["Ruby"],
     "crossfilter": ["JavaScript"],
@@ -10,7 +11,6 @@
     "es6-module-transpiler": ["JavaScript"],
     "ETL": ["Ruby"],
     "fdoc": ["Ruby"],
-    "fest-android": ["Android"],
     "JavaWriter": ["Java"],
     "jetpack": ["Ruby"],
     "jirafy": ["Other"],
