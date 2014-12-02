@@ -7,10 +7,9 @@
     "cube": ["JavaScript"],
     "cubism": ["JavaScript"],
     "dagger": ["Android", "Java"],
-    "es6-module-transpiler": ["JavaScript"],
     "ETL": ["Ruby"],
     "fdoc": ["Ruby"],
-    "fest-android": ["Android"],
+    "assertj-android": ["Android"],
     "JavaWriter": ["Java"],
     "jetpack": ["Ruby"],
     "jirafy": ["Other"],
@@ -40,6 +39,13 @@
       "html_url": "https://github.com/SquareSquash",
       "description": "Squash is an exception reporting and bug analysis tool from Square.",
       "categories": null
+    },
+    {
+      "name": "es6-module-transpiler",
+      "homepage": "http://esnext.github.io/es6-module-transpiler/",
+      "html_url": "https://github.com/esnext/es6-module-transpiler",
+      "description": "Tomorrow’s JavaScript module syntax today",
+      "categories": ["JavaScript"]
     }
   ]
 }
