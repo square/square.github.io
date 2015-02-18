@@ -10,7 +10,7 @@
     "ETL": ["Ruby"],
     "fdoc": ["Ruby"],
     "assertj-android": ["Android"],
-    "JavaWriter": ["Java"],
+    "JavaPoet": ["Java"],
     "jetpack": ["Ruby"],
     "jirafy": ["Other"],
     "LGTM": ["JavaScript"],
