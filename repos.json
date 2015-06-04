@@ -1,5 +1,6 @@
 {
   "repos": {
+	"Aardvark": ["iOS"],
     "android-times-square": ["Android"],
     "border_patrol": ["Ruby"],
     "cane": ["Ruby"],
@@ -30,7 +31,9 @@
     "spoon": ["Android"],
     "tape": ["Android"],
     "toggle": null,
-    "wire": ["Android", "Java"]
+	"Valet": ["iOS"],
+    "wire": ["Android", "Java"],
+	"spacecommander": ["iOS"]
   },
   "custom": [
     {
