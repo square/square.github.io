@@ -1,6 +1,6 @@
 {
   "repos": {
-	"Aardvark": ["iOS"],
+  "Aardvark": ["iOS"],
     "android-times-square": ["Android"],
     "border_patrol": ["Ruby"],
     "cane": ["Ruby"],
@@ -31,9 +31,12 @@
     "spoon": ["Android"],
     "tape": ["Android"],
     "toggle": null,
-	"Valet": ["iOS"],
+    "Valet": ["iOS"],
     "wire": ["Android", "Java"],
-	"spacecommander": ["iOS"]
+    "spacecommander": ["iOS"],
+    "moshi": ["Android", "Java"],
+    "sqlbrite": ["Android"],
+    "leakcanary": ["Android"]
   },
   "custom": [
     {
