@@ -15,8 +15,6 @@
     "jetpack": ["Ruby"],
     "jirafy": ["Other"],
     "LGTM": ["JavaScript"],
-    "objc-mocktail": ["iOS"],
-    "objc-TimesSquare": ["iOS"],
     "okhttp": ["Android", "Java"],
     "otto": ["Android"],
     "picasso": ["Android"],
