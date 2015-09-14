@@ -1,7 +1,8 @@
 {
   "repos": {
-  "Aardvark": ["iOS"],
+    "Aardvark": ["iOS"],
     "android-times-square": ["Android"],
+    "assertj-android": ["Android"],
     "border_patrol": ["Ruby"],
     "cane": ["Ruby"],
     "crossfilter": ["JavaScript"],
@@ -10,11 +11,12 @@
     "dagger": ["Android", "Java"],
     "ETL": ["Ruby"],
     "fdoc": ["Ruby"],
-    "assertj-android": ["Android"],
     "JavaPoet": ["Java"],
     "jetpack": ["Ruby"],
     "jirafy": ["Other"],
+    "leakcanary": ["Android"],
     "LGTM": ["JavaScript"],
+    "moshi": ["Android", "Java"],
     "okhttp": ["Android", "Java"],
     "otto": ["Android"],
     "picasso": ["Android"],
@@ -26,15 +28,13 @@
     "seismic": ["Android"],
     "shuttle": ["Other"],
     "SocketRocket": ["iOS"],
+    "spacecommander": ["iOS"],
     "spoon": ["Android"],
+    "sqlbrite": ["Android"],
     "tape": ["Android"],
     "toggle": null,
     "Valet": ["iOS"],
-    "wire": ["Android", "Java"],
-    "spacecommander": ["iOS"],
-    "moshi": ["Android", "Java"],
-    "sqlbrite": ["Android"],
-    "leakcanary": ["Android"]
+    "wire": ["Android", "Java"]
   },
   "custom": [
     {
