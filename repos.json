@@ -14,6 +14,7 @@
     "JavaPoet": ["Java"],
     "jetpack": ["Ruby"],
     "jirafy": ["Other"],
+    "Keywhiz": ["Java"],
     "leakcanary": ["Android"],
     "LGTM": ["JavaScript"],
     "moshi": ["Android", "Java"],
