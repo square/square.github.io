@@ -25,6 +25,7 @@
     "PonyDebugger": ["iOS"],
     "protoparser": ["Java"],
     "rack-servlet": ["Java"],
+    "rails-auth": ["Ruby"],
     "retrofit": ["Android", "Java"],
     "seismic": ["Android"],
     "shuttle": ["Other"],
