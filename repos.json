@@ -29,7 +29,6 @@
     "retrofit": ["Android", "Java"],
     "seismic": ["Android"],
     "shuttle": ["Other"],
-    "SocketRocket": ["iOS"],
     "spacecommander": ["iOS"],
     "spoon": ["Android"],
     "sqlbrite": ["Android"],
