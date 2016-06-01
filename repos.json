@@ -39,13 +39,6 @@
   },
   "custom": [
     {
-      "name": "squash",
-      "homepage": "http://squash.io",
-      "html_url": "https://github.com/SquareSquash",
-      "description": "Squash is an exception reporting and bug analysis tool from Square.",
-      "categories": null
-    },
-    {
       "name": "es6-module-transpiler",
       "homepage": "http://esnext.github.io/es6-module-transpiler/",
       "html_url": "https://github.com/esnext/es6-module-transpiler",
