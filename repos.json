@@ -1,12 +1,14 @@
 {
   "repos": {
     "Aardvark": ["iOS"],
+    "Ackbar": ["iOS"],
     "android-times-square": ["Android"],
     "assertj-android": ["Android"],
     "border_patrol": ["Ruby"],
     "cane": ["Ruby"],
     "certigo": ["Go"],
     "certstrap": ["Go"],
+    "Cleanse": ["iOS"],
     "crossfilter": ["JavaScript"],
     "cube": ["JavaScript"],
     "cubism": ["JavaScript"],
@@ -41,6 +43,7 @@
     "spoon": ["Android"],
     "sqlbrite": ["Android"],
     "squalor": ["Go"],
+    "SuperDelegate": ["iOS"],
     "tape": ["Android"],
     "toggle": null,
     "Valet": ["iOS"],
