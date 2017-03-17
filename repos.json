@@ -15,6 +15,7 @@
     "dagger": ["Android", "Java"],
     "ETL": ["Ruby"],
     "fdoc": ["Ruby"],
+    "field-kit": ["JavaScript"],
     "ghostunnel": ["Go"],
     "go-jose": ["Go"],
     "gssh": ["Go"],
