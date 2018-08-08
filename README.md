@@ -2,22 +2,35 @@ Square Open Source Portal
 =========================
 
 A simple, static portal which outlines our open source offerings. Intentionally
-themed to look like a merchant page on the directory.
+themed to look like a Square merchant page on the directory.
 
 
 Development
 -----------
 
+### Run the site locally
+```bash
+gem install bundler # first time only
+bundle install # first time only
+bundle exec jekyll serve
+```
+
+
+### Update list of repos:
+```bash
+pip install pystache requests pygithub3 # first time only
+./generate.py
+```
+
+About the code
+-----------
 Due to the use of absolute URLs in CSS files that are (essentially) out of our
 control, the easiest way to develop is by running with Jekyll.
-
-    jekyll serve
 
 Repositories are listed in the `repos.json` file as a map of repository names
 to a list of their categories. Invoking the `generate.py` script will update
 the `index.html` page with the latest repos by using the `index.mustache` file
-as a template. Run `pip install pystache requests pygithub3` if needed to
-install python dependencies.
+as a template.
 
 Repository data is pulled via the GitHub API (e.g., website). By default the
 script performs unauthenticated requests, so it's easy to run up against
