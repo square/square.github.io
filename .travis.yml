@@ -1,21 +1,16 @@
-# route the build to the container-based infrastructure for a faster build
-sudo: false
 language: ruby
 rvm:
-  - 2.2.5
+  - 2.5
+  - current
 
 env:
   global:
     # speeds up installation of html-proofer
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 
-install:
-  - gem install jekyll
-  - gem install html-proofer
-
 # build and validate HTML files
 # more info at https://github.com/gjtorikian/html-proofer
-script: jekyll build && htmlproofer ./_site --alt-ignore '/.*/'
+script: bundle exec jekyll build && bundle exec htmlproofer ./_site --alt-ignore '/.*/'
 
 cache:
   directories:
