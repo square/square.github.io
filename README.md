@@ -38,7 +38,7 @@ GitHub's limit of [60 unauthenticated requests per
 hour](http://developer.github.com/v3/#rate-limiting). To make authenticated
 requests and work around the rate-limiting, add an entry for api.github.com to
 your ~/.netrc file, preferably with a Personal Access Token from
-https://github.com/settings/applications.
+https://github.com/settings/tokens
 
     machine api.github.com
       login YourUsername
