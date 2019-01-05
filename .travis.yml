@@ -10,7 +10,7 @@ env:
 
 # build and validate HTML files
 # more info at https://github.com/gjtorikian/html-proofer
-script: bundle exec jekyll build && bundle exec htmlproofer ./_site --alt-ignore '/.*/'
+script: bundle exec jekyll build #&& bundle exec htmlproofer ./_site --alt-ignore '/.*/'
 
 cache:
   directories:
