@@ -44,7 +44,7 @@
     "shuttle": ["Other"],
     "spacecommander": ["iOS"],
     "spoon": ["Android"],
-    "sqlbrite": ["Android"],
+    "sqldelight": ["Android"],
     "squalor": ["Go"],
     "subzero": ["C", "Java", "Go"],
     "SuperDelegate": ["iOS"],
