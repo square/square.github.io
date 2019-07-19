@@ -51,7 +51,8 @@
     "tape": ["Android"],
     "toggle": null,
     "Valet": ["iOS"],
-    "wire": ["Android", "Java"]
+    "wire": ["Android", "Java"],
+    "workflow": ["Android", "iOS"]
   },
   "custom": [
     {
