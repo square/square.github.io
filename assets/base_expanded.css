@@ -305,13 +305,6 @@ p {
   height: 40px;
   width: 40px;
 }
-.icon-gplus {
-  background: url('/images/gplus.png') no-repeat;
-  height: 40px;
-  width: 40px;
-  display: inline-block;
-  vertical-align: middle;
-}
 .profile {
   font-size: 0.875em;
   line-height: 1.42857em;
