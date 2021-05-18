@@ -3,6 +3,7 @@
     "Aardvark": ["iOS"],
     "Ackbar": ["iOS"],
     "android-times-square": ["Android"],
+    "anvil": ["Android", "Kotlin"],
     "assertj-android": ["Android"],
     "beancounter": ["Go"],
     "border_patrol": ["Ruby"],
