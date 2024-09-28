@@ -16,7 +16,7 @@
         <section class="profile-masthead" id="masthead">
           <header class="profile-logo">
             <div class="profile-logo-image">
-              <img alt="Square Open Source " src="/images/logo.png" />
+              <img alt="Square Open Source Logo" src="/images/logo.png" />
             </div>
             <div class="profile-name">
               <h1>Square Open Source</h1>
@@ -30,8 +30,6 @@
         </section>
 
         <section class="profile-content" id="content">
-          <!-- TODO header? -->
-
           <div class="profile-description">
             <p>As a company built on open source, here are some of the internally-developed libraries we have contributed back to the community.</p>
           </div>
@@ -92,7 +90,7 @@
               <li class="profile-module module-twitter">
                 <h2 class="module-name">Tweets</h2>
                 <a class="twitter-timeline" href="https://twitter.com/SquareEng" data-widget-id="281462446621851648" data-screen-name="SquareEng" data-chrome="none" data-link-color="#50a9ca" data-heading-style="color:#2d3c48;font-size:22px;font-weight:300;line-height:17px;font-family:'SQMarket', 'Helvetica Neue',sans-serif;" height="635" width="100%"></a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                <script src="https://platform.twitter.com/widgets.js"></script>
               </li>
               <li class="profile-module">
                 <h2 class="module-name">Join us</h2>
@@ -125,18 +123,11 @@
     </footer>
 
     <script type="text/javascript">
-      if(window == window.top) document.body.style.display = "block"; else window.top.location = window.location;
-
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-40704740-1']);
       _gaq.push(['_trackPageview']);
 
       (function() {
         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-
-    </script>
-  </body>
-</html>
+        ga.src = 'https://www.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insert
