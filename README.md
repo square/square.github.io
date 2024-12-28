@@ -4,7 +4,7 @@ Square Open Source Portal
 [![Build Status](https://travis-ci.org/square/square.github.io.svg?branch=master)](https://travis-ci.org/square/square.github.io)
 
 A simple, static portal which outlines our open source offerings. Intentionally
-themed to look like a Square merchant page on the directory.
+themed to look like a Square merchant page on the directory!
 
 
 Development
@@ -27,12 +27,12 @@ pip install pystache requests pygithub3 # first time only
 About the code
 -----------
 Due to the use of absolute URLs in CSS files that are (essentially) out of our
-control, the easiest way to develop is by running with Jekyll.
+control, the easiest way to develop is by running with Jekyll;
 
 Repositories are listed in the `repos.json` file as a map of repository names
 to a list of their categories. Invoking the `generate.py` script will update
 the `index.html` page with the latest repos by using the `index.mustache` file
-as a template.
+as a template;
 
 Repository data is pulled via the GitHub API (e.g., website). By default the
 script performs unauthenticated requests, so it's easy to run up against
